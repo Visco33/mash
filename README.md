@@ -1,5 +1,5 @@
 # mash Coin
-Shell script to install a [mash Masternode](https://mashcoin.info/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Mash Masternode](https://mashcoin.info/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 ***
 ## Installation:
