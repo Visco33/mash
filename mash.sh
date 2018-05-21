@@ -174,7 +174,6 @@ function compile_node() {
   rm -rf $TMP_FOLDER
 }
 
-
 function enable_firewall() {
   echo -e "Installing fail2ban and setting up firewall to allow ingress on port ${GREEN}$MASHPORT${NC}"
   ufw allow $MASHPORT/tcp comment "MASH MN port" >/dev/null
