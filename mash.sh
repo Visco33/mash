@@ -2,14 +2,14 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='mashcoin.conf'
-CONFIGFOLDER='/root/.Mashcoin'
+CONFIGFOLDER='/root/.mashcoin'
 COIN_DAEMON='mashd'
 COIN_CLI='mash-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/mashcoinmn/mash-core.git'
+COIN_REPO=https://github.com/mashcoinmn/mash-core.git
 COIN_TGZ='https://github.com/mashcoinmn/mash-core/releases/download/Mash_1.0-4/mash_ubuntu_wallet.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Mash'
+COIN_NAME='mashcoin'
 COIN_PORT=31372
 RPC_PORT=31373
 
