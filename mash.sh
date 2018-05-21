@@ -27,15 +27,15 @@ MAG='\e[1;35m'
 purgeOldInstallation() {
     echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations${NC}"
     #kill wallet daemon
-    sudo killall carebitcoind > /dev/null 2>&1
+    sudo killall mashd > /dev/null 2>&1
     #remove old ufw port allow
     sudo ufw delete allow 9191/tcp > /dev/null 2>&1
     #remove old files
-    if [ -d "~/.carebitcoin" ]; then
-        sudo rm -rf ~/.carebitcoin > /dev/null 2>&1
+    if [ -d "~/.mashcoin" ]; then
+        sudo rm -rf ~/.mashcoin > /dev/null 2>&1
     fi
     #remove binaries and Elbrus utilities
-    cd /usr/local/bin && sudo rm carebitcoin-cli carebitcoin-tx carebitcoind > /dev/null 2>&1 && cd
+    cd /usr/local/bin && sudo rm mash-cli mash-tx mashd > /dev/null 2>&1 && cd
     echo -e "${GREEN}* Done${NONE}";
 }
 
