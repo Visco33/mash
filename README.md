@@ -16,7 +16,7 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 2. Go to RECEIVE and create a New Address: **MN1**
 3. Send **10000** **mash** to **MN1**.
 4. Wait for 15 confirmations.
-5. Go to **Tools -> "Debug console - Console"**
+5. Go to **Help -> "Debug Window"**
 6. Type the following command: **masternode outputs**
 7. Go to  ** Tools -> "Open Masternode Configuration File"
 8. Add the following entry:
